@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Signin = () => {
     return (
         <div className="flex items-center justify-center min-h-screen bg-white px-4">
             <div className="w-full max-w-md bg-white border-t-4 border-b-4 border-black rounded-2xl shadow-lg p-6 sm:p-8">
-                <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Login</h2>
+                <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">Sign In</h2>
 
                 <form className="space-y-4">
                     {/* Email */}
@@ -35,16 +35,16 @@ const Login = () => {
                         </a>
                     </div>
 
-                    {/* Login Button */}
+                    {/* Signin Button */}
                     <button className="w-full bg-black text-white py-2 shadow rounded-lg hover:bg-gray-800 transition">
-                        Login
+                        Signin
                     </button>
                 </form>
 
                 {/* Register Link */}
                 <p className="text-center text-sm text-gray-600 mt-4">
                     Don't have an account?{" "}
-                    <Link to={"/register"} className="text-blue-500 font-medium hover:underline">
+                    <Link to={"/signup"} className="text-blue-500 font-medium hover:underline">
                         Sign up
                     </Link>
                 </p>
@@ -53,4 +53,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Signin;

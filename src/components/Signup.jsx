@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-const Register = () => {
+const Signup = () => {
     const [input, setInput] = useState({
         userName: "",
         email: "",
@@ -14,7 +14,7 @@ const Register = () => {
         setInput({ ...input, [name]: value });
     };
 
-    const handleUserRegister = async (e) => {
+    const handleUserSignup = async (e) => {
         e.preventDefault();
     };
 
@@ -24,7 +24,7 @@ const Register = () => {
                 <h2 className="text-2xl font-semibold text-center text-gray-800">Create an Account</h2>
                 <p className="text-gray-500 text-center mb-6">Join us by filling in your details below.</p>
 
-                <form onSubmit={handleUserRegister} className="space-y-4">
+                <form onSubmit={handleUserSignup} className="space-y-4">
                     {/* Username */}
                     <div>
                         <label className="block text-gray-600 font-medium mb-1">Username</label>
@@ -66,7 +66,7 @@ const Register = () => {
 
                     {/* Register Button */}
                     <button className="w-full bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition">
-                        Register
+                        Signup
                     </button>
                 </form>
 
@@ -78,11 +78,11 @@ const Register = () => {
                     </Link>
                 </p>
                 <button className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700-800 transition mt-10">
-                    Register with Google
+                    Signup with Google
                 </button>
             </div>
         </div>
     );
 };
 
-export default Register;
+export default Signup;
